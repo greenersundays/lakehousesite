@@ -1,0 +1,71 @@
+* {             /*The "*" symbol will automatically define rules for every element on the page */
+    margin: 0;
+}
+
+html, 
+body {
+    height: 100%;
+    color: black;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #999;
+}
+
+p {                             /*This will apply margins to your paragraph in your html doc */
+    margin: 0.5em 0 0.5em 0;
+}
+
+header {                /* This will set key elements in your header (Home,Important Dates, About Us) */    
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgb(212, 151, 212);
+    padding: 10px;
+}
+
+nav a:visited,              /*This will select the links in your header */
+nav a:link{
+    color: white;          /*This will adjust the font color to white */
+    text-decoration: none;  /*This will remove the underlines in your links as they are displayed */
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+} 
+
+nav > ul > li {
+    display: inline-block;      /*This will stack elements in block next to each other and give you control over how elements can be configured */
+    list-style: none;           /*This will tell web page to not interpret the list item as an actual item */
+    margin: 0 5px 0 5px;  /*This shorthand represents from left to right: Top, Right valude, bottom value, and left value */
+}
+
+main {
+    display: block;
+    background-image: url("images/canoe.jpg");   /*This will adjust the background of your main section. You can apply an image that is already saved to the background*/
+    background-size: cover;    /* This will ensure you background doesn't shrink when you zoom in or out */ 
+    background-repeat: no-repeat;
+    padding-top: 3em;
+    padding-bottom: 0em;
+    min-height: 90%;        /*this will adjust the height of your main container*/
+}
+
+footer {
+    padding: 10px;
+    
+}
+
+@media only screen and (min-width: 768px)  {
+    main {
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+    }
+}
+
+
